@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.spring_ssm.dao.StudentDao">
+    <insert id="insertStudent">
+        insert into student(age,name,email) values (#{age},#{name},#{email})
+    </insert>
+    <select id="selectStudent" resultType="com.example.spring_ssm.domain.Student">
+        select * from student
+    </select>
+</mapper>
