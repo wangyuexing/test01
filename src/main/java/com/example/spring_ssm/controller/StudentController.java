@@ -13,4 +13,13 @@ public class StudentController {
         mv.setViewName("test");
         return mv;
     }
+
+    @RequestMapping(value = "/test01.do")
+    public ModelAndView test01(){
+        System.out.println("hello world");
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("test");
+        return mv;
+    }
+}
 }
